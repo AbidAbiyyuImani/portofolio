@@ -1,14 +1,12 @@
 const tailwindcss = require('tailwindcss');
+const plugin = require('tailwindcss/plugin');
 const postcss = require('postcss');
 const autoprefixer = require('autoprefixer');
-const AOS = require('./node_modules/aos/dist/aos');
 // npx tailwindcss -i ./src/input.css -o ./public/dist/css/main.css --watch
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./public/**/*.{html,js}",
-    "./node_modules/aos/dist/aos.css",
-    "./node_modules/aos/dist/**/*.js",
     "./node_modules/flowbite/**/*.js",
   ],
   safelist: [
@@ -56,10 +54,20 @@ module.exports = {
     },
   },
   plugins: [
+    plugin(function ({ addComponents, addUtilities, matchUtilities }) {
+      addComponents({
+        
+      });
+      addUtilities({
+
+      });
+      matchUtilities({
+
+      });
+    }),
     tailwindcss,
     autoprefixer,
     postcss,
-    AOS,
     require('flowbite/plugin'),
   ],
 }

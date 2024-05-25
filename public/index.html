@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abid | Portofolio</title>
     <link rel="stylesheet" href="./dist/css/main.css">
-    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./dist/css/aos.css">
 </head>
 <body>
     <!-- navbar -->
     <nav class="w-full bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a data-aos="fade-right" href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portofolio</span>
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span data-aos="zoom-in" class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portofolio</span>
           </a>
           <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
@@ -23,16 +23,16 @@
           <div class="hidden absolute md:static top-16 w-full md:block md:w-auto" id="navbar-dropdown">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a data-aos="flip-right" href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                <a data-aos="fade-right" href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
               </li>
               <li>
-                <a data-aos="flip-right" href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                <a data-aos="fade-right" href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
               </li>
               <li>
-                <a data-aos="flip-right" href="#exp" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
+                <a data-aos="fade-right" href="#exp" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
               </li>
               <li>
-                <button data-aos="flip-right" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Contact <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                <button data-aos="fade-right" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Contact <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                     <ul class="py-2 z-10 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
@@ -61,23 +61,19 @@
     <main class="container mt-5">
         <!-- CTA -->
         <div id="hero-section" class="w-full py-28 grid grid-cols-1 md:grid-cols-[40%_60%] mb-10">
-            <div data-aos="fade-right" class="flex mx-auto">
+            <div class="flex mx-auto">
                 <img data-tooltip-target="tooltip-abid" class="w-72 h-72 object-cover rounded-full shadow-lg shadow-purple-400" src="dist/img/1.jpg" alt="Abid Abiyyu Imani">
             </div>
-            <div id="tooltip-abid" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-400 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                Abid Abiyyu Imani
-                <div class="tooltip-arrow" data-popper-arrow></div>
-            </div>
             <div class="w-full flex flex-col justify-center">
-                <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 inline-block text-transparent bg-clip-text dark:text-white">Hello, I'm Abid Abiyyu Imani</h1>
-                <p class="text-lg text-gray-500 dark:text-gray-400">I'm a Frontend Developer based in Indonesia. I have a passion for developing web and love to create responsive and interactive website.</p>
+                <h1 id="manem" class="text-4xl md:text-5xl font-bold gr-text dark:text-white">Hello, i'm Abid Abiyyu Imani</h1>
+                <p class="text-lg text-gray-500 dark:text-gray-400">I'm a Website Developer based in Indonesia. I have fun to developing web and love to create responsive and interactive website.</p>
                 <a href="#about-section" type="button" class="mt-3 w-40 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">About Me</a>
                 <div class="flex space"></div>
             </div>
         </div>
         <!-- END CTA -->
-        <div id="about-section" class="w-full">
-            <h1 data-aos="zoom-out-up" class="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text mb-4">About Me</h1>
+        <div id="about-section" class="w-full text-center">
+            <h1 class="gr-text self-center text-4xl font-bold mb-4">About Me</h1>
             <h4 class="p-4 border-2 border-purple-500 rounded-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem harum dolore nam tempore temporibus eaque. Commodi ex obcaecati illum aliquid, sequi minus rerum fugit ipsam sunt a recusandae sit, dolor ea est ipsum, nihil aliquam odit possimus. Reiciendis, architecto! Nemo atque suscipit dolores saepe corporis nihil ab ipsam et? Eligendi iure expedita ex pariatur rem officia ut beatae consequatur itaque dolorum modi, velit ad dolore, voluptatem, vero veniam fugiat laudantium. Illo, sunt quas ipsa in, ullam officia, nostrum laudantium itaque minus fugiat fuga eius vero qui sint commodi vel alias voluptas iure exercitationem! Atque minima alias eveniet, excepturi incidunt odit earum nisi reprehenderit minus provident porro, harum vel saepe error sint ex aperiam voluptatum, facere itaque. Provident cum voluptatum tempore dignissimos soluta nostrum incidunt non dolores corporis dolorem, minima tempora molestiae placeat facilis distinctio eaque necessitatibus, impedit omnis dolore qui! Doloribus asperiores soluta itaque delectus commodi eum non fugiat quasi laborum suscipit distinctio sapiente esse quia quisquam, inventore sequi rerum, sunt tenetur quod? Ullam excepturi, ab consectetur rem porro dolore inventore magni. Libero itaque fugit expedita dolore error? Iusto veniam saepe velit voluptatem possimus mollitia perspiciatis fugiat omnis minus, aliquid ipsam, similique fuga! Animi in fugiat eaque doloribus ad?</h4>
         </div>
     </main>
@@ -89,22 +85,13 @@
             <div class="md:flex md:justify-between">
               <div class="mb-6 md:mb-0">
                 <a data-popover-target="popover-faq" href="https://abid-ktj.my.id"class="flex items-center">
-                      <span class="self-center text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">Portofolio</span>
+                      <span class="self-center text-2xl font-semibold whitespace-nowrap gr-text">Portofolio</span>
                 </a>
               </div>
               <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                   <div>
-                    <h2 class="mb-4 text-sm font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text uppercase">Tech Stack</h2>
+                    <h2 class="mb-4 text-sm font-semibold gr-text uppercase">Tech Stack</h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                        <li class="mb-2">
-                            <a href="#" target="_blank" class="hover:underline">HTML</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" target="_blank" class="hover:underline">CSS</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://www.javascript.com/" target="_blank" class="hover:underline">JavaScript</a>
-                        </li>
                         <li class="mb-2">
                             <a href="https://tailwindcss.com/" target="_blank" class="hover:underline">TailwindCSS</a>
                         </li>
@@ -114,7 +101,7 @@
                     </ul>
                   </div>
                   <div>
-                      <h2 class="mb-4 text-sm font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text uppercase">Resources</h2>
+                      <h2 class="mb-4 text-sm font-semibold gr-text uppercase">Resources</h2>
                       <ul class="text-gray-500 dark:text-gray-400 font-medium">
                           <li class="mb-2">
                               <a href="https://tailwindcss.com/" target="_blank" class="hover:underline">Tailwind CSS</a>
@@ -128,7 +115,7 @@
                       </ul>
                   </div>
                   <div>
-                      <h2 class="mb-4 text-sm font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text uppercase">Follow us</h2>
+                      <h2 class="mb-4 text-sm font-semibold gr-text uppercase">Follow us</h2>
                       <ul class="text-gray-500 dark:text-gray-400 font-medium">
                           <li class="mb-2">
                               <a href="https://github.com/AbidAbiyyuImani" target="_blank" class="hover:underline ">Github</a>
@@ -196,10 +183,19 @@
     </footer>
     <!-- END footer -->
 
-    <script src="../node_modules/aos/dist/aos.js"></script>
+    <!-- tooltip and  -->
+    <div id="tooltip-abid" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-400 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        Abid Abiyyu Imani
+        <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
+    <!-- END tooltip and  -->
+
+    <script src="./dist/js/aos.js"></script>
+    <script src="./dist/js/animation.js"></script>
     <script src="../node_modules/flowbite/dist/flowbite.js"></script>
     <script>
         AOS.init();
     </script>
+    
 </body>
 </html>
