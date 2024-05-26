@@ -73,4 +73,4 @@ module.exports = {
     require('flowbite/plugin'),
   ],
 }
-
+// default hover, hover when dark, media querynya

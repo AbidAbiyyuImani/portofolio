@@ -10,7 +10,16 @@
     }
 }
 @layer components {
+    .gr-bg {
+        @apply hover:text-white hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500;
+    }
     .gr-text {
         @apply bg-gradient-to-r from-purple-500 to-pink-500 inline-block text-transparent bg-clip-text;
+    }
+    .gr-text-hvr {
+        @apply hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:inline-block hover:text-transparent hover:bg-clip-text;
+    }
+    .linking {
+        @apply hover:bg-gradient-to-r;
     }
 }
