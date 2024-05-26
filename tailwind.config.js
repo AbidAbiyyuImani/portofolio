@@ -68,6 +68,8 @@ module.exports = {
     tailwindcss,
     autoprefixer,
     postcss,
+    require('gsap/all'),
+    require('prettier'),
     require('flowbite/plugin'),
   ],
 }
